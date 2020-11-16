@@ -14,13 +14,13 @@ class Heapsort():
         n = len(array)
 
         for i in range(max(0, (n // 2) - 1), -1, -1):
-            self.sink(array, n, i)
+            self.__sink(array, n, i)
 
         for i in range(n - 1, -1, -1):
             self.__swap(array, 0, i)
-            self.sink(array, i, 0)
+            self.__sink(array, i, 0)
 
-    def sink(self, array: List[int], n: int, i: int) -> None:
+    def __sink(self, array: List[int], n: int, i: int) -> None:
         while True:
             left = 2 * i + 1
             right = 2 * i + 2
