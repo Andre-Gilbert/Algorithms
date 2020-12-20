@@ -5,10 +5,7 @@ Merge sort implementation
 from typing import List
 
 
-class MergeSort():
-    def __init__(self) -> None:
-        pass
-
+class MergeSort:
     def sort(self, array: List[int]) -> List[int]:
         n = len(array)
         if n <= 1: return array
