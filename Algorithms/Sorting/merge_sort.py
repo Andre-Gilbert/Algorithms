@@ -1,6 +1,6 @@
 '''
-Merge sort implementation
-@author André Gilbert, andre.gilbert.77110@gmail.com
+Merge sort implementation - O(n * log(n))
+@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 from typing import List
 
