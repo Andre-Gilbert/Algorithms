@@ -5,10 +5,7 @@ Heapsort implementation
 from typing import List
 
 
-class Heapsort():
-    def __init__(self) -> None:
-        pass
-
+class Heapsort:
     def sort(self, array: List[int]) -> None:
         if array == None: return
         n = len(array)
