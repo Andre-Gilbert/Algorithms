@@ -1,25 +1,16 @@
 '''
- * An implementation of finding the GCD of two numbers
- @author William Fiset, william.alexandre.fiset@gmail.com
+An implementation of finding the GCD of two numbers - O(log(a + b))
+@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-public class GCD {
 
-  // Computes the Greatest Common Divisor (GCD) of a & b
-  // This method ensures that the value returned is non negative
-  public static long gcd(long a, long b) {
-    return b == 0 ? (a < 0 ? -a : a) : gcd(b, a % b);
-  }
 
-  public static void main(String[] args) {
-    System.out.println(gcd(12, 18)); // 6
-    System.out.println(gcd(-12, 18)); // 6
-    System.out.println(gcd(12, -18)); // 6
-    System.out.println(gcd(-12, -18)); // 6
+class GCD:
+    def gcd(self, a: int, b: int) -> int:
+        return a if b == 0 else self.gcd(b, a % b)
 
-    System.out.println(gcd(5, 0)); // 5
-    System.out.println(gcd(0, 5)); // 5
-    System.out.println(gcd(-5, 0)); // 5
-    System.out.println(gcd(0, -5)); // 5
-    System.out.println(gcd(0, 0)); // 0
-  }
-}
+
+if __name__ == "__main__":
+    find = GCD()
+    print(find.gcd(12, 18))
+    print(find.gcd(5, 0))
+    print(find.gcd(72, 56))
