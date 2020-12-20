@@ -15,27 +15,27 @@ class MergeSort:
         return self.__merge(left, right)
 
     def __merge(self, left: List[int], right: List[int]) -> List[int]:
-        n1 = len(left)
-        n2 = len(right)
-        n = n1 + n2
-        i1 = 0
-        i2 = 0
+        left_length = len(left)
+        right_length = len(right)
+        n = left_length + right_length
+        idx1 = 0
+        idx2 = 0
         array = [0] * n
 
         for i in range(0, n):
-            if i1 == n1:
-                array[i] = right[i2]
-                i2 += 1
-            elif i2 == n2:
-                array[i] = left[i1]
-                i1 += 1
+            if idx1 == left_length:
+                array[i] = right[idx2]
+                idx2 += 1
+            elif idx2 == right_length:
+                array[i] = left[idx1]
+                idx1 += 1
             else:
-                if left[i1] < right[i2]:
-                    array[i] = left[i1]
-                    i1 += 1
+                if left[idx1] < right[idx2]:
+                    array[i] = left[idx1]
+                    idx1 += 1
                 else:
-                    array[i] = right[i2]
-                    i2 += 1
+                    array[i] = right[idx2]
+                    idx2 += 1
         return array
 
 
