@@ -7,6 +7,12 @@ from typing import List
 
 class BubbleSort:
     def sort(self, array: List[int]) -> None:
+        """Sort the array using bubble sort.
+
+        The function looks for adjacent indexes which
+        are out of place and interchange their elements
+        until the entire array is sorted.
+        """
         if array == None: return
 
         sorted = False
@@ -22,6 +28,7 @@ class BubbleSort:
         array[i], array[j] = array[j], array[i]
 
 
+# Example usage
 if __name__ == '__main__':
     array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
     bubble = BubbleSort()
