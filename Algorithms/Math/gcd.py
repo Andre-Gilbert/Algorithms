@@ -6,6 +6,7 @@ An implementation of finding the GCD of two numbers - O(log(a + b))
 
 class GCD:
     def gcd(self, a: int, b: int) -> int:
+        """Compute the greatest common divisor of a and b"""
         return a if b == 0 else self.gcd(b, a % b)
 
 
