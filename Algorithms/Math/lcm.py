@@ -15,6 +15,7 @@ class LCM:
         return a if b == 0 else self.__gcd(b, a % b)
 
 
+# Example usage
 if __name__ == "__main__":
     find = LCM()
     print(find.lcm(12, 18))
