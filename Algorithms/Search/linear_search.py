@@ -7,12 +7,14 @@ from typing import List
 
 class LinearSearch:
     def search(self, array: List[int], target: int) -> int:
+        """Returns the index of the value that we are searching for."""
         for i, element in enumerate(array):
             if element == target:
                 return i
         return -1
 
 
+# Example usage
 if __name__ == '__main__':
     array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
     ls = LinearSearch()
