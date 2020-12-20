@@ -1,6 +1,6 @@
 '''
-Binary search implementation
-@author André Gilbert, andre.gilbert.77110@gmail.com
+Binary search implementation - O(log(n))
+@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 from typing import List
 
