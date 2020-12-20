@@ -5,10 +5,7 @@ Bubble sort implementation
 from typing import List
 
 
-class BubbleSort():
-    def __init__(self) -> None:
-        pass
-
+class BubbleSort:
     def sort(self, array: List[int]) -> None:
         if array == None: return
 
