@@ -5,10 +5,7 @@ Binary search implementation
 from typing import List
 
 
-class BinarySearch():
-    def __init__(self) -> None:
-        pass
-
+class BinarySearch:
     def binary_search_iterative(self, array: List[int], target: int) -> int:
         if len(array) == 0: return
         low = 0
@@ -41,13 +38,7 @@ if __name__ == '__main__':
     array = [-1, 1, 2, 4, 5, 20, 22, 34, 134, 379]
     bs = BinarySearch()
     index_of_34 = bs.binary_search_iterative(array, 34)
-    index_of_0 = bs.binary_search_iterative(array, 0)
     print(index_of_34)
-    print(index_of_0)
-
     print("---")
-
     index_of_2 = bs.binary_search_recursive(array, 2, 0, len(array))
-    index_of_100 = bs.binary_search_recursive(array, 100, 0, len(array))
     print(index_of_2)
-    print(index_of_100)
