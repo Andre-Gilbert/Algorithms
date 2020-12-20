@@ -1,6 +1,6 @@
 # Datastructures & Algorithms
 
-# Mathematics
+# Math
 
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py">Greatest Common Divisor (GCD)</a> - O(log(a + b))
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/lcm.py">Least Common Multiple (LCM)</a> - O(log(a + b))
