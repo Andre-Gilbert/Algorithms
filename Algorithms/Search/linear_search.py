@@ -5,10 +5,7 @@ Linear search implementation
 from typing import List
 
 
-class LinearSearch():
-    def __init__(self) -> None:
-        pass
-
+class LinearSearch:
     def search(self, array: List[int], target: int) -> int:
         for i, element in enumerate(array):
             if element == target:
@@ -20,6 +17,4 @@ if __name__ == '__main__':
     array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
     ls = LinearSearch()
     index_of_34 = ls.search(array, 34)
-    index_of_0 = ls.search(array, 0)
     print(index_of_34)
-    print(index_of_0)
