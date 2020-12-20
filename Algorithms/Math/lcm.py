@@ -6,12 +6,12 @@ An implementation of finding the LCM of two numbers - O(log(a + b))
 
 class LCM:
     def lcm(self, a: int, b: int) -> float:
-        """Compute the lowest common multiple of a and b"""
+        """Compute the lowest common multiple of a and b."""
         lcm = (a / self.__gcd(a, b)) * b
         return lcm if lcm > 0 else -lcm
 
     def __gcd(self, a: int, b: int) -> int:
-        """Compute the greatest common divisor of a and b"""
+        """Compute the greatest common divisor of a and b."""
         return a if b == 0 else self.__gcd(b, a % b)
 
 
