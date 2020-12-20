@@ -1,14 +1,11 @@
 '''
-Selection sort implementation
+Insertion sort implementation
 @author André Gilbert, andre.gilbert.77110@gmail.com
 '''
 from typing import List
 
 
-class InsertionSort():
-    def __init__(self) -> None:
-        pass
-
+class InsertionSort:
     def sort(self, array: List[int]) -> None:
         if len(array) == None: return
 
