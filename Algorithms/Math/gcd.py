@@ -10,6 +10,7 @@ class GCD:
         return a if b == 0 else self.gcd(b, a % b)
 
 
+# Example usage
 if __name__ == "__main__":
     find = GCD()
     print(find.gcd(12, 18))
