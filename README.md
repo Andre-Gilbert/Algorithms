@@ -1,5 +1,7 @@
 # Datastructures & Algorithms
 
+# Data Structures
+
 # Math
 
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py">Greatest Common Divisor (GCD)</a> - O(log(a + b))
