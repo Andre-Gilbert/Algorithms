@@ -19,4 +19,5 @@
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/bubble_sort.py">Bubblesort</a> - O(n^2)
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/heapsort.py">Heapsort</a> - O(n \* log(n))
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/insertion_sort.py">Insertion Sort</a> - O(n^2)
+- <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/selection_sort.py">Selection Sort</a> - O(n^2)
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/merge_sort.py">Merge Sort</a> - O(n \* log(n))
