@@ -26,7 +26,7 @@ class IsPrime:
         if n % i == 0: return False
         if i * i > n: return True
 
-        # Recursive Cases
+        # Recursive Case
         return self.is_prime_recursive(n, i + 1)
 
 
