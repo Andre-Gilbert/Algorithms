@@ -12,7 +12,7 @@ class Heapsort:
         It is similar to selection sort where we first find the maximum element and place the maximum element at the end. 
         We repeat the same process for the remaining elements.
         """
-        if array == None: return
+        if not array: return
         n = len(array)
 
         # Heapify, converts array into binary heap O(n), see:
