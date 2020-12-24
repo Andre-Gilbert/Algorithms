@@ -8,6 +8,7 @@ from typing import List
 class LinearSearch:
     def search(self, array: List[int], target: int) -> int:
         """Returns the index of the value that we are searching for."""
+        if not array: return
         for i, element in enumerate(array):
             if element == target:
                 return i
