@@ -20,7 +20,7 @@ class IsPrime:
 
         return True
 
-    def is_prime_recursive(self, n: int, i=2) -> bool:
+    def is_prime_recursive(self, n: int, i: int = 2) -> bool:
         # Base cases
         if n <= 2: return True if n == 2 else False
         if n % i == 0: return False
