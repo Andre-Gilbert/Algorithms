@@ -13,7 +13,7 @@ class BubbleSort:
         are out of place and interchange their elements
         until the entire array is sorted.
         """
-        if array == None: return
+        if not array: return
 
         sorted = False
         while True:
