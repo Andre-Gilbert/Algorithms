@@ -13,7 +13,7 @@ class BinarySearch:
         then the item is searched in the sub-array to the left of the middle item. 
         Otherwise, the item is searched for in the sub-array to the right of the middle item.
         """
-        if len(array) == 0: return
+        if not array: return
         low = 0
         hi = len(array) - 1
 
