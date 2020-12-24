@@ -9,7 +9,7 @@ from typing import List
 class SelectionSort:
     def sort(self, array: List[int]) -> None:
         """Find the index beyond i with a lower value than i and swap them."""
-        if array == None: return
+        if not array: return
         n = len(array)
 
         for i in range(n):
