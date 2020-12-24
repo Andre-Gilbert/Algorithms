@@ -13,7 +13,7 @@ class InsertionSort:
         [0, i] and you want to add the element at position i+1, so
         you 'insert' it at the appropriate location.
         """
-        if array == None: return
+        if not array: return
 
         for i in range(1, len(array)):
             j = i
