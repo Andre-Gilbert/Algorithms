@@ -18,7 +18,7 @@ class LinearSearch:
             target: An integer value to search.
             
         Returns:
-            An integer representing the index of the target otherwise None.
+            An integer representing the index of the target otherwise -1.
             
             Example:
             >>> search([0, 5, 7, 10, 15], 6)
