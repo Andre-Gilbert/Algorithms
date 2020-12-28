@@ -12,7 +12,18 @@ class BubbleSort:
         The function looks for adjacent indexes which
         are out of place and interchange their elements
         until the entire array is sorted.
+
+        Args:
+            array: An unordered collection with comparable items.
+
+        Returns: 
+            None.
+
+            Examples:
+            >>> sort([0, 5, 2, 3, 2])
+            [0, 2, 2, 3, 5]
         """
+
         if not array: return
 
         sorted = False
@@ -25,12 +36,13 @@ class BubbleSort:
             if sorted: break
 
     def __swap(self, array: List[int], i: int, j: int) -> None:
+        """Swap two items in the given array."""
         array[i], array[j] = array[j], array[i]
 
 
 # Example usage
 if __name__ == '__main__':
-    array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
     bubble = BubbleSort()
+    array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
     bubble.sort(array)
     print(array)
