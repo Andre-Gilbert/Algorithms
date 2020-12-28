@@ -26,6 +26,7 @@ class GCD:
             >>> gcd(16, 4)
             4
         """
+
         return a if b == 0 else self.gcd(b, a % b)
 
     def gcd_iterative(self, a: int, b: int) -> int:
