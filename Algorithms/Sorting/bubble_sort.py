@@ -37,7 +37,7 @@ class BubbleSort:
             if sorted: break
 
     def __swap(self, array: List[int], i: int, j: int) -> None:
-        """Swap two items in the given array."""
+        """Swaps two items in the given array."""
         array[i], array[j] = array[j], array[i]
 
 
