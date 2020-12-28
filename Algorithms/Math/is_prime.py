@@ -2,7 +2,6 @@
 Tests whether a number is a prime number or not - O(sqrt(n))
 @author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-
 from math import sqrt
 
 
