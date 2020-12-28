@@ -21,6 +21,7 @@ class BubbleSort:
 
             Examples:
             >>> sort([0, 5, 2, 3, 2])
+            >>> print(array)
             [0, 2, 2, 3, 5]
         """
 
