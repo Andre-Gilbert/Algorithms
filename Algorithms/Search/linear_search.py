@@ -2,7 +2,6 @@
 Linear search implementation - O(n)
 @author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-
 from typing import List
 
 
