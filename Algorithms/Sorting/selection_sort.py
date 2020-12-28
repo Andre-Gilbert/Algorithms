@@ -2,7 +2,6 @@
 Selection sort implementation - O(n^2)
 @author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-
 from typing import List
 
 
