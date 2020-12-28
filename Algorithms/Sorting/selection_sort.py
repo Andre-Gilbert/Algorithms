@@ -8,7 +8,22 @@ from typing import List
 
 class SelectionSort:
     def sort(self, array: List[int]) -> None:
-        """Find the index beyond i with a lower value than i and swap them."""
+        """Sort the given array using selection sort.
+        
+        Find the index beyond i with a lower value than i and swap them.
+        
+        Args:
+            array: An unordered collection with comparable items.
+
+        Returns: 
+            None.
+
+            Examples:
+            >>> sort([0, 5, 2, 3, 2])
+            >>> print(array)
+            [0, 2, 2, 3, 5]
+        """
+
         if not array: return
         n = len(array)
 
@@ -21,6 +36,7 @@ class SelectionSort:
             self.__swap(array, i, key)
 
     def __swap(self, array: List[int], i: int, j: int) -> None:
+        """Swaps two items in the given array."""
         array[j], array[i] = array[i], array[j]
 
 

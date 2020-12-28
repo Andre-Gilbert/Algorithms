@@ -7,7 +7,7 @@ from typing import List
 
 class BubbleSort:
     def sort(self, array: List[int]) -> None:
-        """Sort the array using bubble sort.
+        """Sort the given array using bubble sort.
 
         The function looks for adjacent indexes which
         are out of place and interchange their elements
