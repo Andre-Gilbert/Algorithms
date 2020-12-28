@@ -59,5 +59,5 @@ class BinarySearch:
 if __name__ == '__main__':
     bs = BinarySearch()
     array = [-1, 1, 2, 4, 5, 20, 22, 34, 134, 379]
-    print(f"Position of 0 in the array: {bs.binary_search(array, 34)}")
+    print(f"Position of 22 in the array: {bs.binary_search(array, 22)}")
     print(f"Position of 34 in the array: {bs.binary_search_recursive(array, 0, 0, len(array))}")
