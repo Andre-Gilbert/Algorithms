@@ -7,6 +7,7 @@ An implementation of finding the LCM of two numbers - O(log(a + b))
 class LCM:
     def lcm(self, a: int, b: int) -> float:
         """Compute the least common multiple of a and b.
+        
         Args: 
             a: An integer.
             b: An integer.
