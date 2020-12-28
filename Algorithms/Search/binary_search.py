@@ -6,13 +6,28 @@ from typing import List
 
 
 class BinarySearch:
-    def binary_search_iterative(self, array: List[int], target: int) -> int:
+    def binary_search(self, array: List[int], target: int) -> int:
         """Binary search looks for a particular item by comparing the middle most item of the collection.
         
-        If the middle item is greater than the item, 
-        then the item is searched in the sub-array to the left of the middle item. 
-        Otherwise, the item is searched for in the sub-array to the right of the middle item.
+        Be careful collection must be ascending sorted, otherwise result will be
+        unpredictable.
+
+        Args:
+            array: An ascending sorted collection with comparable items.
+            target: An integer value to search.
+
+        Returns:
+            index of found item or None if item is not found
+
+            Examples:
+            >>> binary_search([0, 5, 7, 10, 15], 0)
+            0
+            >>> binary_search([0, 5, 7, 10, 15], 15)
+            4
+            >>> binary_search([0, 5, 7, 10, 15], 5)
+            1
         """
+
         if not array: return
         low = 0
         hi = len(array) - 1
@@ -42,10 +57,7 @@ class BinarySearch:
 
 # Example usage
 if __name__ == '__main__':
-    array = [-1, 1, 2, 4, 5, 20, 22, 34, 134, 379]
     bs = BinarySearch()
-    index_of_34 = bs.binary_search_iterative(array, 34)
-    print(index_of_34)
-    print("---")
-    index_of_2 = bs.binary_search_recursive(array, 2, 0, len(array))
-    print(index_of_2)
+    array = [-1, 1, 2, 4, 5, 20, 22, 34, 134, 379]
+    print(f"Position of 0 in the array: {bs.binary_search(array, 34)}")
+    print(f"Position of 34 in the array: {bs.binary_search_recursive(array, 0, 0, len(array))}")
