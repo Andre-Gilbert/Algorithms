@@ -12,7 +12,7 @@
 # Searching
 
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Search/binary_search.py">Binary Search</a> - O(log(n))
-- <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Search/linear_search.py">Linear Search</a> - O(log(n))
+- <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Search/linear_search.py">Linear Search</a> - O(n)
 
 # Sorting
 
