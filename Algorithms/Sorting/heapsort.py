@@ -9,9 +9,22 @@ class Heapsort:
     def sort(self, array: List[int]) -> None:
         """Heap sort is a comparison based sorting technique based on Binary Heap data structure. 
         
-        It is similar to selection sort where we first find the maximum element and place the maximum element at the end. 
+        It is similar to selection sort where we first find 
+        the maximum element and place the maximum element at the end. 
         We repeat the same process for the remaining elements.
+
+        Args:
+            array: An unordered collection with comparable items.
+
+        Returns: 
+            None.
+
+            Examples:
+            >>> sort([0, 5, 2, 3, 2])
+            >>> print(array)
+            [0, 2, 2, 3, 5]
         """
+
         if not array: return
         n = len(array)
 
@@ -21,32 +34,34 @@ class Heapsort:
             self.__sink(array, n, i)
 
         # Sorting
-        for i in range(n - 1, -1, -1):
+        for i in range(n - 1, 0, -1):
             self.__swap(array, 0, i)
             self.__sink(array, i, 0)
 
-    def __sink(self, array: List[int], n: int, i: int) -> None:
+    def __sink(self, array: List[int], size: int, index: int) -> None:
+        """Maintains the max-heap property for the entire tree."""
         while True:
-            left = 2 * i + 1
-            right = 2 * i + 2
-            largest = i
+            left = 2 * index + 1
+            right = 2 * index + 2
+            largest = index
 
             # Right child is larger than parent
-            if right < n and array[right] > array[largest]:
+            if right < size and array[right] > array[largest]:
                 largest = right
 
             # Left child is larger than parent
-            if left < n and array[left] > array[largest]:
+            if left < size and array[left] > array[largest]:
                 largest = left
 
             # Move down the tree following the largest node
-            if largest != i:
-                self.__swap(array, largest, i)
-                i = largest
+            if largest != index:
+                self.__swap(array, largest, index)
+                index = largest
             else:
                 break
 
     def __swap(self, array: List[int], i: int, j: int) -> None:
+        """Swaps two items in the given array."""
         array[i], array[j] = array[j], array[i]
 
 
