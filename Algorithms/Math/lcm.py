@@ -23,6 +23,7 @@ class LCM:
             >>> lcm(12, 18)
             36
         """
+
         lcm = (a / self.__gcd(a, b)) * b
         return lcm if lcm > 0 else -lcm
 
