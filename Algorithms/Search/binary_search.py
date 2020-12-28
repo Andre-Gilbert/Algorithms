@@ -17,7 +17,7 @@ class BinarySearch:
             target: An integer value to search.
 
         Returns:
-            index of found item or None if item is not found
+            An integer representing the index of the target otherwise -1.
 
             Examples:
             >>> binary_search([0, 5, 7, 10, 15], 0)
