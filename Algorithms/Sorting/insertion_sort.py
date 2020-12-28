@@ -9,10 +9,22 @@ class InsertionSort:
     def sort(self, array: List[int]) -> None:
         """Sort the given array using insertion sort. 
 
-        The idea behind insertion sort is that at the array is already sorted from
-        [0, i] and you want to add the element at position i+1, so
-        you 'insert' it at the appropriate location.
+        The idea behind insertion sort is that at the array is already 
+        sorted from [0, i] and you want to add the element at position i+1,
+        so you 'insert' it at the appropriate location.
+
+        Args:
+            array: An unordered collection with comparable items.
+
+        Returns: 
+            None.
+
+            Examples:
+            >>> sort([0, 5, 2, 3, 2])
+            >>> print(array)
+            [0, 2, 2, 3, 5]
         """
+
         if not array: return
 
         for i in range(1, len(array)):
@@ -22,6 +34,7 @@ class InsertionSort:
                 j -= 1
 
     def __swap(self, array: List[int], i: int, j: int) -> None:
+        """Swaps two items in the given array."""
         array[i], array[j] = array[j], array[i]
 
 
