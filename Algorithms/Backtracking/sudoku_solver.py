@@ -1,3 +1,7 @@
+'''
+A Sudoku solver implementation - O(n^m)
+@author: André Gilbert, andre.gilbert.77110@gmail.com
+'''
 import numpy as np
 from typing import Tuple, List
 
@@ -62,7 +66,7 @@ class SudokuSolver:
         """Finds an empty location.
         
         Args: 
-            board: Partially filled-in grid.
+            board: Partially filled grid.
 
         Returns:
             A tuple containing 2 integers representing an empty position in the board.
