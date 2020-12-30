@@ -7,9 +7,9 @@ from typing import List
 
 class SieveOfEratosthenes:
     def sieve(self, num: int) -> List[int]:
-         """Compute a list with prime numbers up to n.
+        """Compute a list with prime numbers up to n.
 
-         Args: 
+        Args: 
             num: An integer.
 
         Returns:
@@ -23,7 +23,7 @@ class SieveOfEratosthenes:
             >>> sieve(1)
             []
         """
-        
+
         if num < 2: return []
 
         primes = [n for n in range(2, num + 1)]
