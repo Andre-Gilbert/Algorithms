@@ -27,6 +27,10 @@
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/selection_sort.py">Selection Sort</a> - O(n^2)
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/merge_sort.py">Merge Sort</a> - O(n \* log(n))
 
+# Strings
+
+- <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Strings/is_palindrome.py">Palindrome</a> - O(n)
+
 # License
 
 This repository is released under the <a href="https://opensource.org/licenses/MIT">MIT license</a>. In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
