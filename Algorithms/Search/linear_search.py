@@ -19,7 +19,7 @@ class LinearSearch:
         Returns:
             An integer representing the index of the target otherwise -1.
             
-            Example:
+            Examples:
             >>> search([0, 5, 7, 10, 15], 6)
             -1
             >>> search([0, 5, 7, 10, 15], 15)
@@ -35,10 +35,13 @@ class LinearSearch:
         return -1
 
     def search_recursive(self, array: List[int], target: int, index: int = 0) -> int:
+        # Base case
         if index > len(array) - 1: return -1
 
         if array[index] == target:
             return index
+
+        # Recursive case
         else:
             return self.search_recursive(array, target, index + 1)
 
