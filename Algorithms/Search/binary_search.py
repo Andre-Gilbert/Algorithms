@@ -7,7 +7,7 @@ from typing import List
 
 class BinarySearch:
     def binary_search(self, array: List[int], target: int) -> int:
-        """Binary search looks for a particular item by comparing the middle most item of the collection.
+        """Returns the index of the value that we are searching for.
         
         Be careful collection must be ascending sorted, otherwise result will be
         unpredictable.
@@ -43,12 +43,14 @@ class BinarySearch:
         return -1
 
     def binary_search_recursive(self, array: List[int], target: int, low: int, hi: int) -> int:
+        # Base case
         if low > hi: return -1
 
         mid = (low + hi) // 2
         if array[mid] == target:
             return mid
 
+        # Recursives cases
         if array[mid] > target:
             return self.binary_search_recursive(array, target, low, mid - 1)
         else:
@@ -60,4 +62,4 @@ if __name__ == '__main__':
     bs = BinarySearch()
     array = [-1, 1, 2, 4, 5, 20, 22, 34, 134, 379]
     print(f"Position of 22 in the array: {bs.binary_search(array, 22)}")
-    print(f"Position of 34 in the array: {bs.binary_search_recursive(array, 0, 0, len(array))}")
+    print(f"Position of 34 in the array: {bs.binary_search_recursive(array, 34, 0, len(array))}")
