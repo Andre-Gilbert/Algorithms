@@ -43,4 +43,4 @@ class SieveOfEratosthenes:
 # Example usage
 if __name__ == '__main__':
     primes = SieveOfEratosthenes()
-    print(primes.sieve(100))
+    print(f"All primes up to 100: \n{primes.sieve(100)}")
