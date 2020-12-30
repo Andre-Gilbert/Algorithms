@@ -41,7 +41,7 @@ class SudokuSolver:
         """
 
         for i in range(9):
-            if board[position[0]][i] == num and position[1] != i or board[i][position[1]] == num and position[0] != i:
+            if board[position[0]][i] == num or board[i][position[1]] == num:
                 return False
 
         # Check 3x3 subgrids
