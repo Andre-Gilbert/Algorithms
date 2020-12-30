@@ -7,7 +7,7 @@ from typing import List
 
 class SieveOfEratosthenes:
     def sieve(self, num: int) -> List[int]:
-        """Compute a list with prime numbers up to n.
+        """Gets all primes up to, but NOT including limit (returned as a list of primes).
 
         Args: 
             num: An integer.
