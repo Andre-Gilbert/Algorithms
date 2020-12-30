@@ -5,9 +5,12 @@ from typing import Tuple, List
 class SudokuSolver:
     def solve(self, board: List[List[int]]) -> bool:
         """Solves the given sudoku board.
+
+        Attempts to assign values to all unassigned locations in such a way 
+        to meet the requirements (non-duplication across rows, columns, and boxes).
         
         Args:
-            board: Partially filled-in grid.
+            board: Partially filled grid.
             
         Returns:
             True if solved otherwise False.
@@ -34,7 +37,7 @@ class SudokuSolver:
         """Checks the grid to see if each row, column, and the 3x3 subgrids contain num.
         
         Args:
-            board: Partially filled-in grid.
+            board: Partially filled grid.
 
         Returns: 
             True if num is valid for the given position otherwise False.
