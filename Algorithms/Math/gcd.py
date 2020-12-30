@@ -6,7 +6,7 @@ An implementation of finding the GCD of two numbers - O(log(a + b))
 
 class GCD:
     def gcd(self, a: int, b: int) -> int:
-        """Compute the greatest common divisor of a and b.
+        """Computes the greatest common divisor of a and b.
         
         Below method is more memory efficient because it does not 
         create additional stack frames for recursive functions calls.
@@ -18,7 +18,7 @@ class GCD:
         Returns:
             An integer representing the gcd of a and b.
 
-            Example:
+            Examples:
             >>> gcd(24, 40)
             8
             >>> gcd(3, 9)
@@ -30,6 +30,7 @@ class GCD:
         return a if b == 0 else self.gcd(b, a % b)
 
     def gcd_iterative(self, a: int, b: int) -> int:
+        """Computes the greatest common divisor of a and b."""
         while b:
             a, b = b, a % b
         return a
