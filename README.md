@@ -2,6 +2,10 @@
 
 # Data Structures
 
+# Backtracking
+
+- <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Backtracking/sudoku_solver.py">Sudoku Solver</a> - O(n^m)
+
 # Math
 
 - <a href="https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py">Greatest Common Divisor (GCD)</a> - O(log(a + b))
