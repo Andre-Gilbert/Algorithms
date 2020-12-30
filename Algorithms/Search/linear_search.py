@@ -49,5 +49,6 @@ class LinearSearch:
 # Example usage
 if __name__ == '__main__':
     ls = LinearSearch()
-    print(f"Position of 34 in the array: {ls.search([10, 2, 24, 12, 34, 1, 3, 2, 1, 79], 34)}")
-    print(f"Position of 12 in the array: {ls.search_recursive([10, 2, 24, 12, 34, 1, 3, 2, 1, 79], 12)}")
+    array = [10, 2, 24, 12, 34, 1, 3, 2, 1, 79]
+    print(f"Position of 34 in the array: {ls.search(array, 34)}")
+    print(f"Position of 12 in the array: {ls.search_recursive(array, 12)}")
