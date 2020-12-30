@@ -35,4 +35,4 @@ class Palindrome:
 if __name__ == "__main__":
     palindrome = Palindrome()
     s = "a man a plan a canal panama"
-    print(palindrome.is_palindrome(s))
+    print(f'"a man a plan a canal panama" is a palindrome: {palindrome.is_palindrome(s)}')
