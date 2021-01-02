@@ -14,7 +14,7 @@ class Palindrome:
             s: A String.
             
         Returns:
-            True if given string is a palindrome otherwise False.
+            True if the given string is a palindrome otherwise False.
 
             Examples:
             >>> is_palindrome("Hello")
