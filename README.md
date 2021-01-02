@@ -8,7 +8,7 @@ git clone https://github.com/Andre-Gilbert/Algorithms.git
 
 # List of Algorithms
 
-View [content](https://github.com/Andre-Gilbert/Algorithms/blob/main/CONTENT.md).
+View [directory](https://github.com/Andre-Gilbert/Algorithms/blob/main/DIRECTORY.md).
 
 # License
 
