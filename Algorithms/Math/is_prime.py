@@ -17,7 +17,7 @@ class IsPrime:
         Returns:
             True if n is a prime number otherwise False.
 
-            Example:
+            Examples:
             >>> is_prime(2)
             True
             >>> is_prime(3)
