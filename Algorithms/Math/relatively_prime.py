@@ -17,7 +17,7 @@ class RelativelyPrime:
         Returns:
             True if two numbers are relatively prime otherwise False.
             
-            Example:
+            Examples:
             >>> are_coprime(12, 18)
             False
             >>> are_coprime(9, 3)
