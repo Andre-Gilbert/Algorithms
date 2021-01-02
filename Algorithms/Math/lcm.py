@@ -15,7 +15,7 @@ class LCM:
         Returns:
             A float representing the lcm of a and b.
 
-            Example:
+            Examples:
             >>> lcm(12, 76)
             228
             >>> lcm(5, 2)
