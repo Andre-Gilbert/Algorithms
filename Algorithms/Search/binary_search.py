@@ -50,7 +50,7 @@ class BinarySearch:
         if array[mid] == target:
             return mid
 
-        # Recursives cases
+        # Recursive cases
         if array[mid] > target:
             return self.binary_search_recursive(array, target, low, mid - 1)
         else:
