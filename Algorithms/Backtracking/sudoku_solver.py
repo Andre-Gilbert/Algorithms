@@ -33,7 +33,7 @@ class SudokuSolver:
                 if self.solve(board):
                     return True
 
-                board[row][column] = 0  # undo the bad choice (backtracking)
+                board[row][column] = 0  # Undo the bad choice (backtracking)
 
         return False
 
@@ -77,7 +77,7 @@ class SudokuSolver:
                 if board[row][column] == 0:
                     return row, column
 
-        return -1, -1  # row, column if board is completely filled
+        return -1, -1  # Row, column if board is completely filled
 
 
 # Example usage
