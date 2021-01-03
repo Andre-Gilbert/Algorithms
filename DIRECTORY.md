@@ -7,8 +7,8 @@
 
 # Math
 
-- [Common Divisor (GCD)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py) - O(log(a + b))
-- [Common Multiple (LCM)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/lcm.py) - O(log(a + b))
+- [Greatest Common Divisor (GCD)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py) - O(log(a + b))
+- [Least Common Multiple (LCM)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/lcm.py) - O(log(a + b))
 - [Primality check](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/is_prime.py) - O(sqrt(n))
 - [Relatively prime check](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/relatively_prime.py) - O(log(a + b))
 - [Sieve of Eratosthenes](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/sieve_of_eratosthenes.py) - O(n \* log(log(n)))
