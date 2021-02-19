@@ -1,6 +1,5 @@
 '''
 An implementation of finding the GCD of two numbers - O(log(a + b))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 
 
@@ -26,13 +25,13 @@ class GCD:
             >>> gcd(16, 4)
             4
         """
-
         return a if b == 0 else self.gcd(b, a % b)
 
     def gcd_iterative(self, a: int, b: int) -> int:
         """Computes the greatest common divisor of a and b."""
         while b:
             a, b = b, a % b
+
         return a
 
 

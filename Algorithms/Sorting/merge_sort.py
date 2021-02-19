@@ -1,12 +1,10 @@
 '''
 Merge sort implementation - O(n * log(n))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class MergeSort:
-    def sort(self, array: List[int]) -> List[int]:
+    def sort(self, array: list) -> list:
         """Sort the given array using merge sort. 
         
         Divide array into two sub-arrays of equal number of elements.
@@ -23,7 +21,6 @@ class MergeSort:
             >>> print(array)
             [0, 2, 2, 3, 5]
         """
-
         n = len(array)
         if n <= 1: return array
 
@@ -34,7 +31,7 @@ class MergeSort:
         # Combine the two arrays into one larger array
         return self.__merge(left, right)
 
-    def __merge(self, left: List[int], right: List[int]) -> List[int]:
+    def __merge(self, left: list, right: list) -> list:
         """Merge two sorted arrays into a larger sorted array."""
         left_length = len(left)
         right_length = len(right)
@@ -57,6 +54,7 @@ class MergeSort:
                 else:
                     array[i] = right[index2]
                     index2 += 1
+
         return array
 
 

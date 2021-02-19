@@ -1,6 +1,5 @@
 '''
 Tests whether a number is a prime number or not - O(sqrt(n))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 from math import sqrt
 
@@ -25,7 +24,6 @@ class IsPrime:
             >>> is_prime(4)
             False
         """
-
         if n < 2: return False
         if (n == 2 or n == 3): return True
         if (n % 2 == 0 or n % 3 == 0): return False
@@ -39,6 +37,8 @@ class IsPrime:
         return True
 
     def is_prime_recursive(self, n: int, i: int = 2) -> bool:
+        """Checks to see if a number is a prime."""
+
         # Base cases
         if n <= 2: return True if n == 2 else False
         if n % i == 0: return False

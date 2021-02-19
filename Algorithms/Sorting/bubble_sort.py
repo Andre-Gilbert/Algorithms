@@ -1,12 +1,10 @@
 '''
 Bubble sort implementation - O(n^2)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class BubbleSort:
-    def sort(self, array: List[int]) -> None:
+    def sort(self, array: list) -> None:
         """Sort the given array using bubble sort.
 
         The function looks for adjacent indexes which
@@ -24,16 +22,17 @@ class BubbleSort:
             >>> print(array)
             [0, 2, 2, 3, 5]
         """
-
         if not array: return
-
         sorted = False
+
         while True:
             sorted = True
+
             for i in range(1, len(array)):
                 if array[i] < array[i - 1]:
                     self.__swap(array, i - 1, i)
                     sorted = False
+
             if sorted: break
 
     def __swap(self, array: List[int], i: int, j: int) -> None:

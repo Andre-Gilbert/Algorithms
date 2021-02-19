@@ -1,12 +1,10 @@
 '''
 Linear search implementation - O(n)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class LinearSearch:
-    def search(self, array: List[int], target: int) -> int:
+    def search(self, array: list, target: int) -> int:
         """Returns the index of the value that we are searching for.
 
         This method is more memory efficient because it does not 
@@ -27,14 +25,17 @@ class LinearSearch:
             >>> search([0, 5, 7, 10, 15], 0)
             0
         """
-
         if not array: return
+
         for i, element in enumerate(array):
             if element == target:
                 return i
+
         return -1
 
-    def search_recursive(self, array: List[int], target: int, index: int = 0) -> int:
+    def search_recursive(self, array: list, target: int, index: int = 0) -> int:
+        """Returns the index of the value that we are searching for."""
+
         # Base case
         if index > len(array) - 1: return -1
 

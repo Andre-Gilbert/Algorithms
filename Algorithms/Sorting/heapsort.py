@@ -1,12 +1,10 @@
 '''
 Heapsort implementation O(n * log(n))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class Heapsort:
-    def sort(self, array: List[int]) -> None:
+    def sort(self, array: list) -> None:
         """Heap sort is a comparison based sorting technique based on Binary Heap data structure. 
         
         It is similar to selection sort where we first find 
@@ -24,7 +22,6 @@ class Heapsort:
             >>> print(array)
             [0, 2, 2, 3, 5]
         """
-
         if not array: return
         n = len(array)
 
@@ -38,7 +35,7 @@ class Heapsort:
             self.__swap(array, 0, i)
             self.__sink(array, i, 0)
 
-    def __sink(self, array: List[int], size: int, index: int) -> None:
+    def __sink(self, array: list, size: int, index: int) -> None:
         """Maintains the max-heap property for the entire tree."""
         while True:
             left = 2 * index + 1
@@ -60,7 +57,7 @@ class Heapsort:
             else:
                 break
 
-    def __swap(self, array: List[int], i: int, j: int) -> None:
+    def __swap(self, array: list, i: int, j: int) -> None:
         """Swaps two items in the given array."""
         array[i], array[j] = array[j], array[i]
 

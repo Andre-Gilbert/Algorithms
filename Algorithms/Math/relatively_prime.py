@@ -1,6 +1,5 @@
 '''
 Test to see whether two numbers are relatively prime - O(log (a + b))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 
 
@@ -25,7 +24,6 @@ class RelativelyPrime:
             >>> are_coprime(3, 7)
             True
         """
-
         return self.__gcf(a, b) == 1
 
     def __gcf(self, a: int, b: int) -> int:

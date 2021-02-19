@@ -1,12 +1,10 @@
 '''
 Insertion sort implementation - O(n^2)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class InsertionSort:
-    def sort(self, array: List[int]) -> None:
+    def sort(self, array: list) -> None:
         """Sort the given array using insertion sort. 
 
         The idea behind insertion sort is that at the array is already 
@@ -24,16 +22,16 @@ class InsertionSort:
             >>> print(array)
             [0, 2, 2, 3, 5]
         """
-
         if not array: return
 
         for i in range(1, len(array)):
             j = i
+
             while j > 0 and array[j] < array[j - 1]:
                 self.__swap(array, j - 1, j)
                 j -= 1
 
-    def __swap(self, array: List[int], i: int, j: int) -> None:
+    def __swap(self, array: list, i: int, j: int) -> None:
         """Swaps two items in the given array."""
         array[i], array[j] = array[j], array[i]
 

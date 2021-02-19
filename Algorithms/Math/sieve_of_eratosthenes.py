@@ -1,12 +1,10 @@
 '''
 Use the sieve of eratosthenes to find all the prime numbers up to a certain limit. - O(n * log(log(n)))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class SieveOfEratosthenes:
-    def sieve(self, num: int) -> List[int]:
+    def sieve(self, num: int) -> list:
         """Gets all primes up to, but NOT including limit (returned as a list of primes).
 
         Args: 
@@ -23,9 +21,7 @@ class SieveOfEratosthenes:
             >>> sieve(1)
             []
         """
-
         if num < 2: return []
-
         primes = [n for n in range(2, num + 1)]
         i = 2
 
@@ -34,7 +30,6 @@ class SieveOfEratosthenes:
                 for j in range(i * 2, num + 1, i):
                     if j in primes:
                         primes.remove(j)
-
             i += 1
 
         return primes

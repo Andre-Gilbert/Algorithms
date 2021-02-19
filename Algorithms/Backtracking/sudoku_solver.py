@@ -1,6 +1,5 @@
 '''
 A Sudoku solver implementation - O(n^m)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 import numpy as np
 from typing import Tuple, List

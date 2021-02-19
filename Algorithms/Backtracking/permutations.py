@@ -1,12 +1,10 @@
 '''
 Generate all the permutations of a list of elements - O(n!)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List, Union
 
 
 class Permutations:
-    def generate_permutations(self, sequence: List[Union[str, int, float]]) -> None:
+    def generate_permutations(self, sequence: list) -> None:
         """Generates all the permutations of a sequence of objects.
         
         Args: 
@@ -26,14 +24,12 @@ class Permutations:
             ["A", 1.5]
             [1.5, "A"]
         """
-
         if not sequence: return
         used = [False for i in range(len(sequence))]
         picked = [0 for i in range(len(sequence))]
         self.__permutations(0, used, picked, sequence)
 
-    def __permutations(self, index: int, used: List[bool], picked: List[int], sequence: List[Union[str, int,
-                                                                                                   float]]) -> None:
+    def __permutations(self, index: int, used: list, picked: list, sequence: list) -> None:
         """Recursive method to generate all the permutations of a sequence.
         
         Args:
@@ -45,7 +41,6 @@ class Permutations:
         Returns:
             None.
         """
-
         if index == len(sequence):
             print(picked)  # Print valid permutation
 

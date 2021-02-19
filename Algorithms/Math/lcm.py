@@ -1,6 +1,5 @@
 '''
 An implementation of finding the LCM of two numbers - O(log(a + b))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 
 
@@ -23,8 +22,8 @@ class LCM:
             >>> lcm(12, 18)
             36
         """
-
         lcm = (a / self.__gcd(a, b)) * b
+
         return lcm if lcm > 0 else -lcm
 
     def __gcd(self, a: int, b: int) -> int:

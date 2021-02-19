@@ -1,6 +1,5 @@
 '''
 Test to see whether the string is a palindrome - O(n)
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
 
 
@@ -26,8 +25,8 @@ class Palindrome:
             >>> is_palindrome("Mr. Owl ate my metal worm?")
             True
         """
-
         s = "".join([char for char in s.lower() if char.isalnum()])
+
         return s == s[::-1]
 
 

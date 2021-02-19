@@ -1,12 +1,10 @@
 '''
 Binary search implementation - O(log(n))
-@author: André Gilbert, andre.gilbert.77110@gmail.com
 '''
-from typing import List
 
 
 class BinarySearch:
-    def binary_search(self, array: List[int], target: int) -> int:
+    def binary_search(self, array: list, target: int) -> int:
         """Returns the index of the value that we are searching for.
         
         Be careful collection must be ascending sorted, otherwise result will be
@@ -27,22 +25,25 @@ class BinarySearch:
             >>> binary_search([0, 5, 7, 10, 15], 5)
             1
         """
-
         if not array: return
         low = 0
         hi = len(array) - 1
 
         while low <= hi:
             mid = (hi + low) // 2
+
             if array[mid] == target:
                 return mid
             elif array[mid] < target:
                 low = mid + 1
             else:
                 hi = mid - 1
+
         return -1
 
-    def binary_search_recursive(self, array: List[int], target: int, low: int, hi: int) -> int:
+    def binary_search_recursive(self, array: list, target: int, low: int, hi: int) -> int:
+        """Returns the index of the value that we are searching for."""
+
         # Base case
         if low > hi: return -1
 
