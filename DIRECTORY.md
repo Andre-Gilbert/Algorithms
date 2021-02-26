@@ -1,5 +1,7 @@
 # Data Structures
 
+- [Array Stack](Data%20Structures/Stack/array_stack.py)
+
 # Backtracking
 
 - [Sudoku Solver](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Backtracking/sudoku_solver.py) - O(n^m)
