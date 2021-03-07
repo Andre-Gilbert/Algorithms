@@ -27,6 +27,7 @@
 - [Insertion Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/insertion_sort.py) - O(n^2)
 - [Selection Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/selection_sort.py) - O(n^2)
 - [Merge Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/merge_sort.py) - O(n \* log(n))
+- [Quicksort]() - Θ(nlog(n))
 
 # Strings
 
