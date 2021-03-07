@@ -1,34 +1,36 @@
 # Data Structures
 
+## Stacks
+
 - [Array Stack](Data%20Structures/Stack/array_stack.py)
 
 # Backtracking
 
-- [Sudoku Solver](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Backtracking/sudoku_solver.py) - O(n^m)
-- [List Permutations](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Backtracking/permutations.py) - O(n!)
+- [Sudoku Solver](Algorithms/Backtracking/sudoku_solver.py) - O(n^m)
+- [List Permutations](Algorithms/Backtracking/permutations.py) - O(n!)
 
 # Math
 
-- [Greatest Common Divisor (GCD)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/gcd.py) - O(log(a + b))
-- [Least Common Multiple (LCM)](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/lcm.py) - O(log(a + b))
-- [Primality check](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/is_prime.py) - O(sqrt(n))
-- [Relatively prime check](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/relatively_prime.py) - O(log(a + b))
-- [Sieve of Eratosthenes](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Math/sieve_of_eratosthenes.py) - O(n \* log(log(n)))
+- [Greatest Common Divisor (GCD)](Algorithms/Math/gcd.py) - O(log(a + b))
+- [Least Common Multiple (LCM)](Algorithms/Math/lcm.py) - O(log(a + b))
+- [Primality check](Algorithms/Math/is_prime.py) - O(sqrt(n))
+- [Relatively prime check](Algorithms/Math/relatively_prime.py) - O(log(a + b))
+- [Sieve of Eratosthenes](Algorithms/Math/sieve_of_eratosthenes.py) - O(n \* log(log(n)))
 
 # Searching
 
-- [Binary Search](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Search/binary_search.py) - O(log(n))
-- [Linear Search](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Search/linear_search.py) - O(n)
+- [Binary Search](Algorithms/Search/binary_search.py) - O(log(n))
+- [Linear Search](Algorithms/Search/linear_search.py) - O(n)
 
 # Sorting
 
-- [Bubblesort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/bubble_sort.py) - O(n^2)
-- [Heapsort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/heapsort.py) - O(n \* log(n))
-- [Insertion Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/insertion_sort.py) - O(n^2)
-- [Selection Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/selection_sort.py) - O(n^2)
-- [Merge Sort](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Sorting/merge_sort.py) - O(n \* log(n))
-- [Quicksort]() - Θ(nlog(n))
+- [Bubblesort](Algorithms/Sorting/bubble_sort.py) - O(n^2)
+- [Heapsort](Algorithms/Sorting/heapsort.py) - O(n \* log(n))
+- [Insertion Sort](Algorithms/Sorting/insertion_sort.py) - O(n^2)
+- [Selection Sort](Algorithms/Sorting/selection_sort.py) - O(n^2)
+- [Merge Sort](Algorithms/Sorting/merge_sort.py) - O(n \* log(n))
+- [Quicksort](Algorithms/Sorting/quick_sort.py) - Θ(n \* log(n))
 
 # Strings
 
-- [Palindrome](https://github.com/Andre-Gilbert/Algorithms/blob/main/Algorithms/Strings/is_palindrome.py) - O(n)
+- [Palindrome](Algorithms/Strings/is_palindrome.py) - O(n)
