@@ -1,4 +1,7 @@
-# Algorithms and data structures
+# Algorithms and data structures in Python
+
+This repository's goal is to demonstrate how to correctly implement common data structures and algorithms in the simplest and most elegant ways.
+These implementations are for learning purposes only. Therefore they may be less efficient than the implementations in the Python standard library.
 
 # Play with the algorithms
 
@@ -8,7 +11,7 @@ git clone https://github.com/Andre-Gilbert/Algorithms.git
 
 # List of Algorithms
 
-View [directory](https://github.com/Andre-Gilbert/Algorithms/blob/main/DIRECTORY.md).
+View [directory](DIRECTORY.md).
 
 # License
 
