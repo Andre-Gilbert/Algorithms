@@ -20,6 +20,7 @@
 # Searching
 
 - [Binary Search](Algorithms/Search/binary_search.py) - O(log(n))
+- [Interpolation Search](Algorithms/Search/interpolation_search.py) - O(n) or O(log(log(n))) with uniform input
 - [Linear Search](Algorithms/Search/linear_search.py) - O(n)
 
 # Sorting
