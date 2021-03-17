@@ -28,7 +28,7 @@ class Stack:
         """Returns the number of elements inside the stack."""
         return len(self.__stack)
 
-    def __contains__(self, elem) -> bool:
+    def __contains__(self, elem: int) -> bool:
         """Checks if an element is in the stack."""
         return elem in self.__stack
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     stack = Stack()
     stack.push(1)
     stack.push(2)
-    print(f"Stack: {str(stack)}")
+    print(f"Stack: {stack}")
     print(f"2 in stack: {2 in stack}")
     print(f"Stack size: {stack.size()}")
     print(f"Current top: {stack.peek()}")
