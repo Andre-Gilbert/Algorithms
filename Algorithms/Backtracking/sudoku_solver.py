@@ -18,7 +18,6 @@ class SudokuSolver:
         Returns:
             True if solved otherwise False.
         """
-
         position = self.__find_empty_position(board)
         if position == (-1, -1):
             return True
@@ -45,7 +44,6 @@ class SudokuSolver:
         Returns: 
             True if num is valid for the given position otherwise False.
         """
-
         for i in range(9):
             if board[position[0]][i] == num or board[i][position[1]] == num:
                 return False
@@ -70,7 +68,6 @@ class SudokuSolver:
         Returns:
             A tuple containing 2 integers representing an empty position in the board.
         """
-
         for row in range(9):
             for column in range(9):
                 if board[row][column] == 0:
