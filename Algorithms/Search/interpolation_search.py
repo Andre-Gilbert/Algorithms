@@ -7,7 +7,7 @@ class InterpolationSearch:
     def search(self, array: list, value: int) -> int:
         """A fast alternative to a binary search when the elements are uniformly distributed.
 
-        Args: 
+        Args:
             array: An ordered list containing uniformly distributed values.
             value: The value we're looking for in 'array'.
 
